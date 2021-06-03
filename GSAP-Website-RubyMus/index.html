@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="Stylesheet" href="css/style.css">
+    <link rel="Stylesheet" href="css/musicPlayer.css">
+    <link rel="Stylesheet" href="css/stylesheets.css">
+    <title>Ruby Mus</title>
+</head>
+<body>
+
+    <!-- CURSOR -->
+    <div class="cursor">
+
+    </div>
+
+    <!-- SCROLLEN NAAR BOVEN -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+    <!-- HEADER -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+           <img class="img__header" src="img/logo-RubyMus.png">
+           
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#music" class="nav__link">Music</a></li>
+                    <li class="nav__item"><a href="#goals" class="nav__link">Info</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- MAIN BODY -->
+    <main class="l-main">
+        
+        <!-- HOME SECTION -->
+        <section class="about section bd-container" id="home">
+            <div class="home__container bd-container bd-grid">
+               <video autoplay loop muted>
+                <source src="Ruby Boomerrang neon v3 Klaar.mp4" type="video/mp4">
+               </video>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about section bd-container" id="about">
+            <span class="section-subtitle">This is me</span>
+            <h2 class="section-title">Ruby Mus</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__data bd-grid">
+                    <p class="about__description" data-aos="fade-right" data-aos-delay="300"><span>Hi there!<br></span>
+                        Ruby Mus, the stage name of Myrthe Robijns, takes you to another dimension with her fresh, cheerful melodies. 
+                        Inspired by the color red, she translates complex emotions about love, conflict and self-empowerment through well-chosen words, harmonies, but also dance.<br><br>
+                        
+                        She creates a unique sound by combining her roots in R&B and soul music with modern ones
+                        electronic soundscapes, provided by the several producers working with her
+                        collaborate. Showing your emotions and feelings through words and dance are the purest ways to express yourself.<br><br>  
+                    </p>
+
+                    <div class="about__social" data-aos="fade-up" data-aos-delay="100">
+                        <a href="https://www.facebook.com/RubymusOfficial/" target="_blank" class="about__social-icon"><i class="bx bxl-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/rubymuss/" target="_blank" class="about__social-icon"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UC9PxIcUwzwk5IjbYFmwwMag" target="_blank" class="about__social-icon"><i class='bx bxl-youtube'></i></a>
+                    </div>
+
+                </div>
+                
+                <div class = "slider" data-aos="fade-left" data-aos-delay="100">
+                    <div class = "slides">
+        
+                        <input type = "radio" name = "radio-btn" id = "radio1">
+                        <input type = "radio" name = "radio-btn" id = "radio2">
+                        <input type = "radio" name = "radio-btn" id = "radio3">
+                        <input type = "radio" name = "radio-btn" id = "radio4">
+        
+                        <div class = "slide eerst">
+                            <img src = "img/Ruby-Silloutte-1000x1000.png">
+                        </div>
+                        <div class = "slide">
+                            <img src = "img/Ruby 3d 1000x1000png.png">
+                        </div>
+                        <div class = "slide">
+                            <img src = "img/Ruby-duotone-1000x1000.png">
+                        </div>
+                        <div class = "slide">
+                            <img src = "img/mockups beter 1000x1000.png">
+                        </div>
+                </div>
+                 
+            </div>
+        </section>
+
+         <!-- MUSIC SECTION -->
+        <section class="music__container" id="music">
+            <span class="section-subtitle">Have a listen</span>
+            <h2 class="section-title">Music</h2>
+
+            <div class="music">
+                <div class="player">
+                    <div class="player__header">
+
+                      <div class="player__img player__img--absolute slider__music">
+                        <button class="player__button player__button--absolute--nw playlist">
+                          <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
+                        </button>
+                
+                        <button class="player__button player__button--absolute--center play">
+                          <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon">
+                          <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon">
+                        </button>
+                
+                        <div class="slider__content">
+                          <img class="img slider__img" src="img/Ruby-Silloutte-1000x1000.png" alt="cover">
+                          <img class="img slider__img" src="img/Ruby 3d 1000x1000png.png" alt="cover">
+                          <img class="img slider__img" src="img/mockups beter 1000x1000.png" alt="cover">
+                        </div>
+                      </div>
+                
+                        <div class="player__controls">
+                            <button class="player__button back">
+                            <img class="img__music" src="img/back.png" alt="back-icon">
+                            </button>
+
+                            <p class="player__context slider__context">
+                            <strong class="slider__name"></strong>
+                            <span class="player__title slider__title"></span>
+                            </p>
+
+                            <button class="player__button next">
+                            <img class="img__music" src="img/next.png" alt="next-icon">
+                            </button>
+
+                            <div class="progres">
+                            <div class="progres__filled"></div>
+                            </div>
+                        </div>
+                    
+                        </div>
+                
+                        <ul class="player__playlist list">
+                        <li class="player__song">
+                            <img class="player__img img" src="img/Ruby-Silloutte-1000x1000.png" alt="cover">
+                            <p class="player__context">
+                            <b class="player__song-name">No Way Up</b>
+                            <span class="flex">
+                                <span class="player__title">Single</span>
+                                <span class="player__song-time"></span>
+                            </span>
+                            </p>
+                            <audio class="audio" src="no-way-up-myrthe-robijns.mp3"></audio>
+                        </li>
+                    
+                        <li class="player__song">
+                            <img class="player__img img" src="img/Ruby 3d 1000x1000png.png" alt="cover">
+                            <p class="player__context">
+                            <b class="player__song-name">Yet to come</b>
+                            <span class="flex">
+                                <span class="player__title">Newest release</span>
+                                <span class="player__song-time"></span>
+                            </span>
+                            </p>
+                            <audio class="audio" src=""></audio>
+                        </li>
+                    
+                        <li class="player__song">
+                            <img class="player__img img" src="img/mockups beter 1000x1000.png" alt="cover">
+                            <p class="player__context">
+                            <b class="player__song-name">Yet to come</b>
+                            <span class="flex">
+                                <span class="player__title">Newest release</span>
+                                <span class="player__song-time"></span>
+                            </span>
+                            </p>
+                            <audio class="audio" src=""></audio>
+                        </li>
+                       
+                        </ul>
+                     </div>
+                </div> 
+             </div>   
+        </section>
+
+        <!-- INFO SECTION -->
+        <section class="goals section bd-container" id="goals">
+            <span class="section-subtitle">Here you can find information about my branding, performances and next project</span>
+            <h2 class="section-title">Info</h2> 
+
+            <div class="goals__container bd-grid">
+                <div class="goals__data" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bx bx-palette goals__icon"></i>
+                    <h3 class="goals__title">Brandguide</h3>
+                    <p class="goals__description">Are you interested in seeing how the branding of Ruby Mus came to be? Have a look at the Brand guide.</p>
+                    <a href="img/Brandbook Ruby Mus.pdf" download="Brandguide-RubyMus" class="button">Brandguide</a>
+                </div>
+
+                <div class="goals__data" data-aos="fade-up" data-aos-delay="600">
+                    <i class="bx bx-git-repo-forked goals__icon"></i>
+                    <h3 class="goals__title">Performances</h3>
+                    <p class="goals__description">Are you interested in seeing the neweste performance of Ruby Mus? Have a look at when she will be performing.</p>
+                    <a href="#" class="button">Know More</a>
+                </div>
+
+                <div class="goals__data" data-aos="fade-up" data-aos-delay="900">
+                    <i class="bx bx-user-plus goals__icon"></i>
+                    <h3 class="goals__title">Projects</h3>
+                    <p class="goals__description">Are you interested in seeing the next project of Ruby Mus? Have a look at newest project she is working on.</p>
+                    <a href="#" class="button">'Insert project'</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact section bd-container" id="contact">
+            <span class="section-subtitle">Would you like to know more?</span>
+            <h2 class="section-title">Contact Me?</h2> 
+
+            <div class="contact__container bd-grid">
+                <div class="contact__content bd-grid">
+                    <div class="contact__box" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bx bx-home contact__icon"></i>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__description">The netherlands</span>
+                    </div>
+
+                    <div class="contact__box" data-aos="fade-up" data-aos-delay="600">
+                        <i class="bx bx-phone contact__icon"></i>
+                        <h3 class="contact__title">Phone</h3>
+                        <span class="contact__description">06-123456789</span>
+                    </div>
+
+                    <div class="contact__box" data-aos="fade-up" data-aos-delay="900">
+                        <i class="bx bx-envelope contact__icon"></i>
+                        <h3 class="contact__title">Mail</h3>
+                        <span class="contact__description">RubyMus@mail.com</span>
+                    </div>
+
+                    <div class="contact__box" data-aos="fade-up" data-aos-delay="1200">
+                        <i class="bx bx-chat contact__icon"></i>
+                        <h3 class="contact__title">Chat</h3>
+                        <div>
+                            <a href="#" class="contact__social"><i class="bx bxl-whatsapp-square"></i></a>
+                            <a href="#" class="contact__social"><i class='bx bxs-message-square-detail'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form" data-aos="fade-up" data-aos-delay="1500">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="email" placeholder="Email" class="contact__input">
+                    </div>
+
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Project" class="contact__input">
+                        <input type="number" placeholder="Phone" class="contact__input">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="7" placeholder="Message" class="contact__input"></textarea>
+
+                    <input type="submit" value="Send Message" class="button contact__button">
+                </form>
+            </div>
+        </section>
+            
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container bd-container">
+            <h1 class="footer__title">Ruby Mus</h1>
+            <p class="footer__description">Singer, Songwriter, Artits</p>
+
+            <div class="about__social">
+                <a href="https://www.facebook.com/RubymusOfficial/" target="_blank" class="about__social-icon"><i class="bx bxl-facebook-square"></i></a>
+                <a href="https://www.instagram.com/rubymuss/" target="_blank" class="about__social-icon"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UC9PxIcUwzwk5IjbYFmwwMag" target="_blank" class="about__social-icon"><i class='bx bxl-youtube'></i></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SCRIPTS IMPORT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/musicPlayer.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
